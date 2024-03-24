@@ -1,4 +1,5 @@
 import AddSection from "../components/AddSection";
+import Post from "../components/Post";
 import "../styles/main.css";
 
 function Home() {
@@ -6,6 +7,9 @@ function Home() {
     <div className="home">
       <div className="container">
         <AddSection />
+        <section className="posts">
+          <Post />
+        </section>
       </div>
     </div>
   );
