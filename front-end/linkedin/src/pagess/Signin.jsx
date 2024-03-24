@@ -1,7 +1,8 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import "../styles/signin.css";
 
 function Signin() {
+  const navigate = useNavigate();
   return (
     <div className="signin flex-center">
       <div className="signin-form rounded">
@@ -35,8 +36,9 @@ function Signin() {
         <button className="google">
           <i class="fa-brands fa-google"></i>Continue with Google
         </button>
-        <p className="to-login">
-          New to LinkedIn?<span>Join now</span>
+        <p className="to-signup">
+          New to LinkedIn?
+          <span onClick={() => navigate("/signup")}>Join now</span>
         </p>
       </div>
     </div>

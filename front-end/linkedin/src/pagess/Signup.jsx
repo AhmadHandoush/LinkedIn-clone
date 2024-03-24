@@ -29,7 +29,7 @@ const Signup = () => {
         </button>
         <p className="to-login">
           Already on LinkedIn?
-          <span className="go-log" onClick={() => navigate("../../Signin")}>
+          <span className="go-log" onClick={() => navigate("/")}>
             Sign in
           </span>
         </p>

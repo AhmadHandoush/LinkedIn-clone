@@ -150,13 +150,14 @@ button i {
 .google:hover {
   border: 2px solid grey;
 }
-.to-login {
+.to-signup {
   font-size: 10px;
   text-align: center;
   width: 100%;
-  font-size: 12px;
+  font-size: 13px;
 }
-.to-login span {
+.to-signup span {
   color: var(--main-color);
   font-weight: bold;
+  cursor: pointer;
 }

@@ -20,21 +20,24 @@ function Header() {
               </NavLink>
             </li>
             <li>
-              <NavLink className="link flex column flex-center">
+              <NavLink to="/jobs" className="link flex column flex-center">
                 {" "}
                 <i class="fa-solid fa-briefcase"></i>
                 <span>Jobs</span>
               </NavLink>
             </li>
             <li>
-              <NavLink className="link flex column flex-center">
+              <NavLink to="/network" className="link flex column flex-center">
                 <i class="fa-solid fa-user-group"></i> <span> My Networks</span>
               </NavLink>
             </li>
             <li>
-              <NavLink>
+              <NavLink to="/profile">
                 <div className="pro-photo">
-                  <img src="" alt="" />
+                  <img
+                    src="/WhatsApp Image 2024-03-24 at 11.03.54 PM.jpeg"
+                    alt="hamada"
+                  />
                 </div>
               </NavLink>
             </li>
