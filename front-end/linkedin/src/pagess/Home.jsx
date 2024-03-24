@@ -9,6 +9,9 @@ function Home() {
         <AddSection />
         <section className="posts">
           <Post />
+          <Post />
+          <Post />
+          <Post />
         </section>
       </div>
     </div>

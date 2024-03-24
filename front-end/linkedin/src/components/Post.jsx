@@ -1,16 +1,19 @@
 import "../styles/home.css";
+import "../styles/main.css";
 
 function Post() {
   return (
     <div className="post">
       <div className="top flex">
         <div className="user-image">
-          <img src="" alt="" />
+          <img src="/WhatsApp Image 2024-03-24 at 11.03.54 PM.jpeg" alt="" />
         </div>
         <div className="infos">
           <h3>Ahmad Handoush</h3>
-          <small>Full stack web developer</small>
-          <small>2days ago</small>
+          <div className="flex column">
+            <small>Full stack web developer</small>
+            <small>2days ago</small>
+          </div>
         </div>
       </div>
       <div className="post-info">
