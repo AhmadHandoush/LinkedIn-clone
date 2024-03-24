@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import "../signin.css";
+import "../styles/signin.css";
 
 function Signin() {
   return (
@@ -36,7 +36,7 @@ function Signin() {
           <i class="fa-brands fa-google"></i>Continue with Google
         </button>
         <p className="to-login">
-          Already on LinkedIn?<span>Sign in</span>
+          New to LinkedIn?<span>Join now</span>
         </p>
       </div>
     </div>
