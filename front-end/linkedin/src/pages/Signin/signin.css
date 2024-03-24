@@ -1,0 +1,162 @@
+:root {
+  --main-color: #0a66c2;
+  --border-color: #ccc;
+  --bg-grey: #eee;
+  --bg-white: #ffffff;
+  --bg-hover: #f7f7f7;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection {
+  background-color: var(--main-color);
+  color: var(--bg-white);
+}
+body {
+  font-family: sans-serif;
+}
+.t-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.t-center {
+  text-align: center;
+}
+.flex {
+  display: flex;
+}
+.flex-items {
+  display: flex;
+  align-items: center;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+.rounded {
+  border-radius: 6px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.signin {
+  height: 100vh;
+  background-color: var(--bg-white);
+}
+
+.signin-form {
+  background-color: var(--bg-white);
+  padding: 15px;
+  width: 20%;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+}
+h1 {
+  font-size: 20px;
+}
+.info {
+  font-size: 12px;
+  margin: 5px 0 10px;
+}
+label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+input {
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid black;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+}
+small {
+  font-size: 10px;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.4);
+}
+.des {
+  font-size: 10px;
+  text-align: start;
+  width: 100%;
+  color: var(--main-color);
+  font-weight: bold;
+}
+.join {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px 0;
+  outline: none;
+  border: none;
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+.join:hover {
+  background-color: #004182;
+}
+.hr {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.hr p {
+  margin: 0 10px;
+  font-size: 12px;
+}
+.hr span {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+button i {
+  color: black;
+}
+.google {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px 0;
+
+  background-color: var(--bg-white);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  cursor: pointer;
+}
+.google:hover {
+  border: 2px solid grey;
+}
+.to-login {
+  font-size: 10px;
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+}
+.to-login span {
+  color: var(--main-color);
+  font-weight: bold;
+}
