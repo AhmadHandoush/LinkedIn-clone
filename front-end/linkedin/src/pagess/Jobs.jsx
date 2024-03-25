@@ -3,7 +3,7 @@ import "../styles/main.css";
 function Jobs() {
   return (
     <div className="jobs">
-      <div className="container">jobs</div>
+      <div className="container"></div>
     </div>
   );
 }
