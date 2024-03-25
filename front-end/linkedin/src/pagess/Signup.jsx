@@ -10,7 +10,7 @@ const Signup = () => {
   const [password, setPassword] = useState("");
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(password);
+
     const formData = new FormData();
     formData.append("name", name);
     formData.append("email", email);
