@@ -58,6 +58,9 @@ ul {
 a {
   text-decoration: none;
 }
+.profile {
+  height: 100vh;
+}
 
 .user-photo {
   width: 200px;

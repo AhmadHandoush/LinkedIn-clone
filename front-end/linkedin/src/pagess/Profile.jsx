@@ -1,10 +1,35 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../styles/main.css";
 import "../styles/profile.css";
 import EditUser from "../components/EditUser";
 
 function Profile() {
+  const [id, setId] = useState(JSON.parse(localStorage.getItem("user-id")));
   const [add, setAdd] = useState(false);
+  const [data, setData] = useState([]);
+  const [error, setError] = useState("");
+  const { UserID, Username, Email, Experience, Education, Skills, Bio } = data;
+
+  useEffect(() => {
+    async function getData() {
+      try {
+        const res = await fetch(
+          `http://localhost/linkedin/backend/getUser.php?id=${id}`
+        );
+        if (!res.ok) throw new Error("UR internet has interrupted");
+
+        const data = await res.json();
+
+        if (data.Response === "False") throw new Error("data not found");
+        setData(data.user);
+      } catch (err) {
+        setError(err);
+      }
+    }
+    getData();
+  }, [id]);
+  console.log(data);
+
   return (
     <div className="profile">
       <div className="container">
@@ -16,11 +41,11 @@ function Profile() {
             />
           </div>
           <div className="user-infos">
-            <h1>Ahmad Handoush</h1>
-            <p>Job</p>
-            <div className="adress">adress</div>
+            <h1>{Username}</h1>
+            <p>Job: {Skills}</p>
+            <div className="adress"> Experience: {Experience}</div>
             <div className="show-more">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>Bio: {Bio}</p>
             </div>
           </div>
         </div>
