@@ -9,7 +9,7 @@ function Header() {
           <i class="fa-brands fa-linkedin"></i>
           <div className="search">
             <div>
-              <i class="fa-solid fa-magnifying-glass"></i>
+              <i className="fa-solid fa-magnifying-glass"></i>
             </div>
             <div className="flex-center">
               <input type="search" placeholder="Search" />
@@ -20,19 +20,20 @@ function Header() {
           <ul className="main-nav flex-items">
             <li>
               <NavLink to="/Home" className="link flex column flex-center">
-                <i class="fa-solid fa-house"></i> <span>Home</span>
+                <i className="fa-solid fa-house"></i> <span>Home</span>
               </NavLink>
             </li>
             <li>
               <NavLink to="/jobs" className="link flex column flex-center">
                 {" "}
-                <i class="fa-solid fa-briefcase"></i>
+                <i className="fa-solid fa-briefcase"></i>
                 <span>Jobs</span>
               </NavLink>
             </li>
             <li>
               <NavLink to="/network" className="link flex column flex-center">
-                <i class="fa-solid fa-user-group"></i> <span> My Networks</span>
+                <i className="fa-solid fa-user-group"></i>{" "}
+                <span> My Networks</span>
               </NavLink>
             </li>
             <li>
