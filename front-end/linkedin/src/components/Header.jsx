@@ -7,9 +7,13 @@ function Header() {
       <div className="container flex-between">
         <div className="logo flex">
           <i class="fa-brands fa-linkedin"></i>
-          <div className="search ">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Search" />
+          <div className="search">
+            <div>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div className="flex-center">
+              <input type="search" placeholder="Search" />
+            </div>
           </div>
         </div>
         <nav>

@@ -58,6 +58,9 @@ ul {
 a {
   text-decoration: none;
 }
+.home {
+  padding-top: 20px;
+}
 
 .add {
   width: 70%;
