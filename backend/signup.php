@@ -20,9 +20,9 @@ if ($email_exists == 0) {
     
     $hashed_password = password_hash($password, PASSWORD_BCRYPT);
     $sql = "INSERT INTO users (Username, Email,Password) VALUES (?, ?, ?)";
-    $stmt = $mysqli->prepare($sql);
-    $stmt->bind_param("sss", $name, $email, $hashed_password);
-    $stmt->execute();
+    $query = $mysqli->prepare($sql);
+    $query->bind_param("sss", $name, $email, $hashed_password);
+    $query->execute();
     $response['status'] = "success";
     $response['message'] = "user was created successfully";
    
