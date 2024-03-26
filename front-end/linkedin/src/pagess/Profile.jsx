@@ -28,7 +28,6 @@ function Profile() {
     }
     getData();
   }, [id]);
-  console.log(data);
 
   return (
     <div className="profile">

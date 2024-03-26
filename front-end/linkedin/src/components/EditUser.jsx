@@ -22,7 +22,7 @@ function EditUser() {
 
     try {
       const response = await fetch(
-        "http://localhost/linkedin/backend/Edituser.php",
+        "http://localhost/linkedin/backend/edituser.php",
         {
           method: "POST",
           body: formData,
@@ -41,7 +41,7 @@ function EditUser() {
   };
   return (
     <div className="user-editing flex">
-      <form>
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
           value={name}
